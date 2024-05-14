@@ -1,7 +1,5 @@
-import React from 'react';
-
 const IntroPage = () => {
-  return <div>IntroPage</div>;
+  return <div></div>;
 };
 
 export default IntroPage;
