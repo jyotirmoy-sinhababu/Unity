@@ -1,11 +1,11 @@
-import HeroSection from '../../components/heroSection/HeroSection';
 import Navbar from '../../components/nav/Navbar';
+import IntroPage from '../intropage/IntroPage';
 
 const LandingPage = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection />
+      <IntroPage />
     </div>
   );
 };

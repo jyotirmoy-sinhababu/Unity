@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         merienda: ['Merienda', 'cursive'],
+        abril: ['Abril Fatface', 'serif'],
+        vollkorn: ['Vollkorn', 'serif'],
       },
     },
   },
