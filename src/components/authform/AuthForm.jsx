@@ -18,6 +18,16 @@ const AuthForm = () => {
         <p>OR</p>
         <div className='w-[200px] border-2'></div>
       </div>
+      <div>
+        {isLogin ? "Don't have an account?" : 'Already have an account?'}
+        <button
+          onClick={() => {
+            setIsLogin(!isLogin);
+          }}
+        >
+          {isLogin ? 'Sign up' : 'Log in'}
+        </button>
+      </div>
     </>
   );
 };

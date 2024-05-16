@@ -12,7 +12,7 @@ const IntroPage = () => {
           Get started -it's for free.
         </button>
       </div>
-      <div className='flex mt-[4%] justify-around '>
+      {/* <div className='flex mt-[4%] justify-around '>
         <div className='flex w-[280px] border-2 h-[100px] justify-center items-center'>
           <p className='text-slate-400'>
             Upload your work and get noticed by other.
@@ -23,7 +23,7 @@ const IntroPage = () => {
             You can like and give feedback to others.
           </p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

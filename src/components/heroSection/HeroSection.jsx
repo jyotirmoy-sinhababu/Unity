@@ -9,8 +9,9 @@ const HeroSection = () => {
     <>
       <div className='flex justify-between items-center absolute mx-[8%] mt-[4%]'>
         <div className='w-[40%] ]'>
-          <p className='text-slate-400 sm:text-[4rem] text-[66px]  font-semibold leading-[5rem] font-vollkorn'>
-            Simple interface to showcase your work.
+          <p className='text-slate-400 sm:text-[4rem] text-[66px]  font-semibold leading-[5rem] font-vollkorn whitespace-nowrap'>
+            Simple interface
+            <br /> to showcase <br /> your work.
           </p>
         </div>{' '}
         <div className='w-[40%] bg-transparent'>
