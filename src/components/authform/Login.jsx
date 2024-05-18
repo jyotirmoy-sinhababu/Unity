@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <div className='flex flex-col gap-1'>
       <div className='flex flex-col gap-1'>
-        <label className='text-slate-400 font-vollkorn' for='email'>
+        <label className='text-slate-400 font-vollkorn' htmlFor='email'>
           Email
         </label>
         <input
@@ -13,7 +13,7 @@ const Login = () => {
         />
       </div>
       <div className='flex flex-col gap-1'>
-        <label className='text-slate-400 font-vollkorn' for='email'>
+        <label className='text-slate-400 font-vollkorn' htmlFor='email'>
           Password
         </label>
         <input
