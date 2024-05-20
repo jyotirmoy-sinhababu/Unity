@@ -18,7 +18,7 @@ const SignUp = () => {
           Full name
         </label>
         <input
-          className='w-[360px] h-[45px] border-2 rounded-md text-slate-400'
+          className='w-[360px] h-[45px] border-2 rounded-md text-slate-400 pl-3'
           type='name'
           onChange={(e) => {
             setSignUpInputs({
@@ -34,7 +34,7 @@ const SignUp = () => {
           Email
         </label>
         <input
-          className='w-[360px] h-[45px] border-2 rounded-md text-slate-400'
+          className='w-[360px] h-[45px] border-2 rounded-md text-slate-400 pl-3'
           type='email'
           onChange={(e) => {
             setSignUpInputs({
@@ -49,7 +49,7 @@ const SignUp = () => {
           Password
         </label>
         <input
-          className='w-[360px] h-[45px] border-2 rounded-md text-slate-400'
+          className='w-[360px] h-[45px] border-2 rounded-md text-slate-400 pl-3'
           type='password'
           onChange={(e) => {
             setSignUpInputs({
