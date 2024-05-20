@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import useSignUpWithEmailandPassword from '../../hooks/useSignUpWithEmailandPassword';
+import useSignUpWithEmail from '../../hooks/useSignUpWithEmail';
 
 const SignUp = () => {
   const [signUpInputs, setSignUpInputs] = useState({
@@ -9,9 +9,7 @@ const SignUp = () => {
     password: '',
   });
 
-  const { signUp, isLoading } = useSignUpWithEmailandPassword();
-
-  console.log(signUpInputs);
+  const { signUpFunction, isLoading } = useSignUpWithEmail();
 
   return (
     <div className='flex flex-col gap-1'>
@@ -66,7 +64,7 @@ const SignUp = () => {
         <button
           onClick={(e) => {
             e.preventDefault();
-            signUp(signUpInputs);
+            signUpFunction(signUpInputs);
           }}
           className='w-[360px] h-[37px] flex justify-center items-center text-slate-400 rounded bg-cyan-900 font-abril'
         >

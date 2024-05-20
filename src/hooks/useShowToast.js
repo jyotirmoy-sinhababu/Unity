@@ -11,7 +11,7 @@ const useShowToast = () => {
   };
   const errorMsg = (msg) => {
     toast.error(msg, {
-      // position: toast.POSITION.BOTTOM_CENTER,
+      position: toast.POSITION.BOTTOM_CENTER,
       className: 'border-2 border-red-900 text-[21px] decoration-rose-900',
     });
   };

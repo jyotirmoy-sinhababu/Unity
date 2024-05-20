@@ -1,34 +1,34 @@
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth, firestore } from '../components/firebase/FirebaseConfig';
-import { useState } from 'react';
 import { setDoc } from 'firebase/firestore';
 import { doc } from 'firebase/firestore';
 import { collection, query, where, getDocs } from 'firebase/firestore';
+import { useState } from 'react';
 
-import useShowToast from './useShowToast';
-
-const useSignUpWithEmailandPassword = () => {
+const useSignUpWithEmail = () => {
   const [isLoading, setIsLoading] = useState(false);
+  // const { errorMsg } = useShowToast();
 
-  const { createUserWithEmailAndPassword, loading, error } =
+  const [createUserWithEmailAndPassword, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
 
-  const { errorMsg } = useShowToast();
-
-  const signUp = async (inputs) => {
+  const signUpFunction = async (inputs) => {
     if (!inputs.name || !inputs.email || !inputs.password) {
-      errorMsg('All the inputs required');
-      return;
+      // errorMsg('all input fields are required');
+      console.log('invalid input');
     }
+
     const usersRef = collection(firestore, 'users');
 
     const q = query(usersRef, where('username', '==', inputs.email));
     const querySnapshot = await getDocs(q);
 
     if (!querySnapshot.empty) {
-      errorMsg('All the inputs required');
+      // showToast('Error', 'Username already exists', 'error');
+      console.log('username already exists');
       return;
     }
+
     try {
       setIsLoading(true);
       const newUser = await createUserWithEmailAndPassword(
@@ -36,6 +36,7 @@ const useSignUpWithEmailandPassword = () => {
         inputs.password
       );
       if (!newUser && error) {
+        showToast('Error', error.message, 'error');
       }
       if (newUser) {
         const userDoc = {
@@ -58,7 +59,7 @@ const useSignUpWithEmailandPassword = () => {
       console.log(error);
     }
   };
-  return { signUp, isLoading };
+  return { signUpFunction, isLoading };
 };
 
-export default useSignUpWithEmailandPassword;
+export default useSignUpWithEmail;
