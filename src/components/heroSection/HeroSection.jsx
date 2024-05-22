@@ -1,9 +1,3 @@
-import photoOne from '../../assets/photoOne.svg';
-import photoTwo from '../../assets/photoTwo.svg';
-import photoThree from '../../assets/photoThree.svg';
-
-import ReactParallaxTilt from 'react-parallax-tilt';
-
 const HeroSection = () => {
   return (
     <>

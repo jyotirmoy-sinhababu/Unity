@@ -1,6 +1,6 @@
 import './App.css';
-import AuthForm from './components/authform/AuthForm';
 import LandingPage from './pages/landingPage/LandingPage';
+import AuthPage from './pages/auth/AuthPage';
 
 import { Route, Routes } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route index element={<LandingPage />} />
-        <Route path='auth' element={<AuthForm />} />
+        <Route path='auth' element={<AuthPage />} />
       </Routes>
     </>
   );

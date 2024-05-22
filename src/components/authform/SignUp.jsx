@@ -14,11 +14,11 @@ const SignUp = () => {
   return (
     <div className='flex flex-col gap-1'>
       <div className='flex flex-col gap-1'>
-        <label className='text-slate-400 font-vollkorn' htmlFor='name'>
+        <label className='text-slate-600 font-vollkorn' htmlFor='name'>
           Full name
         </label>
         <input
-          className='w-[360px] h-[45px] border-2 rounded-md text-slate-400 pl-3'
+          className='w-[360px] h-[45px] border-2 border-zinc-800 rounded-md text-slate-700 pl-3'
           type='name'
           onChange={(e) => {
             setSignUpInputs({
@@ -30,11 +30,11 @@ const SignUp = () => {
       </div>
       <div className='flex flex-col gap-1'>
         {' '}
-        <label className='text-slate-400 font-vollkorn' htmlFor='email'>
+        <label className='text-slate-600 font-vollkorn' htmlFor='email'>
           Email
         </label>
         <input
-          className='w-[360px] h-[45px] border-2 rounded-md text-slate-400 pl-3'
+          className='w-[360px] h-[45px] border-2 border-zinc-800 rounded-md text-slate-700 pl-3'
           type='email'
           onChange={(e) => {
             setSignUpInputs({
@@ -45,11 +45,11 @@ const SignUp = () => {
         />
       </div>
       <div className='flex flex-col gap-1'>
-        <label className='text-slate-400 font-vollkorn' htmlFor='password'>
+        <label className='text-slate-600 font-vollkorn' htmlFor='password'>
           Password
         </label>
         <input
-          className='w-[360px] h-[45px] border-2 rounded-md text-slate-400 pl-3'
+          className='w-[360px] h-[45px] border-2 border-zinc-800 rounded-md text-slate-700 pl-3'
           type='password'
           onChange={(e) => {
             setSignUpInputs({
