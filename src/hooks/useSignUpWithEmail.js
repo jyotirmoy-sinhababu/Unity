@@ -6,8 +6,7 @@ import { collection, query, where, getDocs } from 'firebase/firestore';
 import { useState } from 'react';
 
 import { useDispatch } from 'react-redux';
-import Login from '../components/authform/Login';
-
+import { login } from '../slice/AuthSlice';
 const useSignUpWithEmail = () => {
   const [isLoading, setIsLoading] = useState(false);
   // const { errorMsg } = useShowToast();
@@ -40,7 +39,8 @@ const useSignUpWithEmail = () => {
         inputs.password
       );
       if (!newUser && error) {
-        showToast('Error', error.message, 'error');
+        // showToast('Error', error.message, 'error');
+        console.log('error');
       }
       if (newUser) {
         const userDoc = {
@@ -57,7 +57,7 @@ const useSignUpWithEmail = () => {
         await setDoc(doc(firestore, 'users', newUser.user.uid), userDoc);
         setIsLoading(false);
         localStorage.setItem('user-info', JSON.stringify(userDoc));
-        dispatch(Login(userDoc));
+        dispatch(login(userDoc));
       }
     } catch (error) {
       setIsLoading(false);
