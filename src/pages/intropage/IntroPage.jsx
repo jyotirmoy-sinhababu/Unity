@@ -4,7 +4,7 @@ const IntroPage = () => {
   return (
     <>
       <HeroSection />
-      <div className='flex flex-col justify-center items-center mt-[44%] text-slate-400 gap-8'>
+      <div className='flex flex-col justify-center items-center mt-[11%] text-slate-400 gap-8'>
         <p className='text-4xl font-vollkorn'>
           A free platform for of everyone.
         </p>

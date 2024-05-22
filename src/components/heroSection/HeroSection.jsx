@@ -7,9 +7,9 @@ import ReactParallaxTilt from 'react-parallax-tilt';
 const HeroSection = () => {
   return (
     <>
-      <div className='flex justify-center items-center mt-[7%]'>
+      <div className='flex justify-center items-center mt-[11%]'>
         <div className='flex justify-center items-center w-[100%]'>
-          <p className='text-slate-400 sm:text-[4rem] text-[66px] font-semibold leading-[5rem] font-vollkorn whitespace-nowrap'>
+          <p className='text-center text-slate-700 sm:text-[5rem] text-[66px] font-semibold leading-[5rem] font-vollkorn whitespace-nowrap'>
             Simple interface
             <br /> to showcase <br /> your work.
           </p>
