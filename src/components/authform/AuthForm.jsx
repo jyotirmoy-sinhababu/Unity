@@ -19,7 +19,7 @@ const AuthForm = () => {
         <div className='sm:w-[200px] w-[145px] h-0 border border-zinc-800'></div>
       </div>
       <div className='flex justify-center items-center gap-3 text-[17px]'>
-        <p className='text-slate-400'>
+        <p className='text-slate-600'>
           {isLogin ? "Don't have an account?" : 'Already have an account?'}
         </p>
         <button

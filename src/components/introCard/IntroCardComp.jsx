@@ -12,7 +12,10 @@ const IntroCardComp = () => {
           src={photographer}
           alt='image of photographer'
         />
-        <div className='absolute bottom-[18px] bg-transparent pl-[12px]'>
+        <div
+          className='absolut
+        +e bottom-[18px] bg-transparent pl-[12px]'
+        >
           <p className='bg-transparent text-slate-400 font-medium'>
             Photographer
           </p>

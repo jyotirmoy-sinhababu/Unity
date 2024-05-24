@@ -9,6 +9,8 @@ const useLogin = () => {
   const [signInWithEmailAndPassword, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
+  const dispatch = useDispatch();
+
   const loginUser = async (inputs) => {
     if (!inputs.email || !inputs.password) {
       return console.log('error');

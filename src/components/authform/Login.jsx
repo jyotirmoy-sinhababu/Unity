@@ -1,4 +1,8 @@
+import useLogin from '../../hooks/useLogin';
+
 const Login = () => {
+  const { loading, error, loginUser } = useLogin();
+
   return (
     <div className='flex flex-col gap-1'>
       <div className='flex flex-col gap-1'>
