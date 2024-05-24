@@ -12,7 +12,7 @@ const IntroPage = () => {
         <p className='text-4xl font-vollkorn'>
           A free platform for of everyone.
         </p>
-        <button className='text-[1.2rem] font-vollkorn border-2 border-teal-700 h-[47px] w-[280px]'>
+        <button className='flex justify-center items-center text-[1.2rem] font-vollkorn border-2 border-teal-700 h-[47px] w-[280px]'>
           Get started -it's for free.
         </button>
       </div>

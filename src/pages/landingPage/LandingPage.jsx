@@ -1,3 +1,4 @@
+import Footer from '../../components/footer/Footer';
 import Navbar from '../../components/nav/Navbar';
 import IntroPage from '../intropage/IntroPage';
 
@@ -10,6 +11,7 @@ const LandingPage = () => {
     <div>
       <Navbar />
       <IntroPage />
+      <Footer />
     </div>
   );
 };
