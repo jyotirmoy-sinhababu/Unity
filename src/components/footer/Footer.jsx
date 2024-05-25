@@ -1,8 +1,6 @@
-import React from 'react';
-
 const Footer = () => {
   return (
-    <div className='h-[311px] flex items-center justify-center'>
+    <div className='h-[311px] flex items-center justify-center border-t-2 border-black mt-[11%]'>
       <div className='flex justify-center items-center'>
         <p className='font-vollkorn'>Created by -</p>
         <a
